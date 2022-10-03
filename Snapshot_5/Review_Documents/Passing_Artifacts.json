@@ -1,0 +1,205 @@
+
+{
+	"security_requirements_review" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "exists"
+		}
+	},
+	"agree_results_review" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "exists"
+		}
+	},
+	"requirements_stated_in_terms_of_interface" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "requirements_stated_in_terms_of_interface\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"tool_generated_apis_correctly_derived_from_model" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "tool_generated_apis_correctly_derived_from_model\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"application_code_uses_tool_generated_apis" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "application_code_uses_tool_generated_apis\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"library_usage_has_no_effect_outside_of_component_boundary" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "library_usage_has_no_effect_outside_of_component_boundary\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"application_code_runs_to_completion" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "application_code_runs_to_completion\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"component_output_satisfies_contract_on_every_dispatch" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "component_output_satisfies_contract_on_every_dispatch\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"component_output_satisfies_information_flow_specifications_on_every_dispatch" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "component_output_satisfies_information_flow_specifications_on_every_dispatch\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"component_execution_time_conforms_to_specified_wcet_on_every_dispatch" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "component_execution_time_conforms_to_specified_wcet_on_every_dispatch\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"component_infrastructure_code_satisfies_aadl_semantics" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "component_infrastructure_code_satisfies_aadl_semantics\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"identifiable_component_platform_deployment" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "identifiable_component_platform_deployment\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"application_infrastructure_deployment_interface_identification" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "application_infrastructure_deployment_interface_identification\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"port_correspondence_traceability" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "port_correspondence_traceability\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"component_dispatch" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "component_dispatch\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"infrastructure_application_non_interference" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "infrastructure_application_non_interference\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"specified_information_flow_directionality_enforced_by_deployment" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "specified_information_flow_directionality_enforced_by_deployment\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"deployed_component_satisfies_functional_requirements" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "deployed_component_satisfies_functional_requirements\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"deployed_component_satisfies_intra_component_flows" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "deployed_component_satisfies_intra_component_flows\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"platform_components_guarantee_required_properties" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "platform_components_guarantee_required_properties\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	},
+	"system_implementation_satisfies_security_requirements" : {
+		"file_location" : "Review_Documents/Passing_Reviews.txt",
+		"evaluation" : {
+			"type" : "regex",
+			"regex" : "system_implementation_satisfies_security_requirements\\s+([\\w\\.]+\\s*:\\s*(PASSED|FAILED)\\s+)*(%s\\s*:\\s*PASSED)",
+			"args" : [
+				0
+			]
+		}
+	}
+}

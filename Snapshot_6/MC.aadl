@@ -1,0 +1,127 @@
+package MC
+public
+
+	with SW;
+	with UAS_Buses;
+	with CASE_Model_Transformations;
+	with HAMR;
+	with CASE_Scheduling;
+	with CASE_Requirements;
+	with CASE_Properties;
+
+	-- The radio communication hardware
+	device Radio
+		features
+			MCA: requires bus access MC_Bus.Impl;
+			RFA: requires bus access UAS_Buses::RF_Bus.Impl;
+			RecvIn: in event data port;
+			RecvOut: out event data port CASE_Model_Transformations::CASE_RF_Msg.Impl;
+			SendIn: in event data port CASE_Model_Transformations::CASE_RF_Msg.Impl;
+			SendOut: out event data port;
+	end Radio;
+
+	device implementation Radio.Impl
+	end Radio.Impl;
+
+	-- The serial communication hardware
+	device UART
+		features
+			MCA: requires bus access MC_Bus.Impl;
+			UARTA: requires bus access UAS_Buses::Serial_Bus.Impl;
+			RecvIn: in event data port;
+			RecvOut: out event data port CASE_Model_Transformations::CASE_UART_Msg.Impl;
+			SendIn: in event data port CASE_Model_Transformations::CASE_UART_Msg.Impl;
+			SendOut: out event data port;
+	end UART;
+
+	device implementation UART.Impl
+	end UART.Impl;
+
+	-- The Mission Computer processor
+	processor MC_Proc
+		features
+			MCA: requires bus access MC_Bus.Impl;
+	end MC_Proc;
+
+	processor implementation MC_Proc.Impl
+		properties
+			CASE_Scheduling::Max_Domain => 10;
+			CASE_Scheduling::Schedule_Source_Text => "domain-schedule/schedule.c";
+			Timing_Properties::Clock_Period => 2ms;
+			Timing_Properties::Frame_Period => 1000ms;
+	end MC_Proc.Impl;
+
+	-- The Mission Computer RAM
+	memory MC_Mem
+		features
+			MCA: requires bus access MC_Bus.Impl;
+	end MC_Mem;
+
+	memory implementation MC_Mem.Impl
+	end MC_Mem.Impl;
+
+	-- The Mission Computer on-board bus
+	bus MC_Bus
+	end MC_Bus;
+
+	bus implementation MC_Bus.Impl
+	end MC_Bus.Impl;
+
+	-- The MissionComputer onboard the UAV
+	system MissionComputer
+		features
+			RadioRecv: in event data port;
+			RadioSend: out event data port;
+			UartRecv: in event data port;
+			UartSend: out event data port;
+			UARTA: requires bus access UAS_Buses::Serial_Bus.Impl;
+			RFA: requires bus access UAS_Buses::RF_Bus.Impl;
+	end MissionComputer;
+
+	system implementation MissionComputer.Impl
+		subcomponents
+			Radio_HW: device Radio.Impl;
+			UART_HW: device UART.Impl;
+			Proc_HW: processor MC_Proc.Impl;
+			Mem_HW: memory MC_Mem.Impl;
+			Bus_HW: bus MC_Bus.Impl;
+			SW: system SW::SW_seL4.Impl;
+		connections
+			c1: port RadioRecv -> Radio_HW.RecvIn;
+			c2: port Radio_HW.SendOut -> RadioSend;
+			c3: port UartRecv -> UART_HW.RecvIn;
+			c4: port UART_HW.SendOut -> UartSend;
+			bac1: bus access Radio_HW.MCA <-> Bus_HW;
+			bac2: bus access UART_HW.MCA <-> Bus_HW;
+			bac3: bus access Proc_HW.MCA <-> Bus_HW;
+			bac4: bus access Mem_HW.MCA <-> Bus_HW;
+			bac5: bus access Radio_HW.RFA <-> RFA;
+			bac6: bus access UART_HW.UARTA <-> UARTA;
+		properties
+			Actual_Processor_Binding => (reference (Proc_HW)) applies to SW;
+			Actual_Memory_Binding => (reference (Mem_HW)) applies to SW;
+			HAMR::Bit_Codec_Raw_Connections => true;
+			CASE_Properties::OS => seL4 applies to Proc_HW;
+		annex resolute {**
+			check HAMR_Guidelines
+			argue MissionComputer_Impl_cyber_resilient(this)
+		**};
+	end MissionComputer.Impl;
+
+	annex resolute {**
+		
+		goal MissionComputer_Impl_cyber_resilient(sys : system) <=
+			** "The " sys " is acceptably cyber-resilient" **
+			strategy : "Argue over security requirements";
+			security_requirements_complete(sys) and MissionComputer_Impl_security_requirements_satisfied(sys)
+		
+		goal MissionComputer_Impl_security_requirements_satisfied(sys : system) <=
+			** "Security requirements are satisfied" **
+			MissionComputer_Impl_security_requirements_satisfied_in_model() and security_requirements_satisfied_in_implementation(sys)
+		
+		goal MissionComputer_Impl_security_requirements_satisfied_in_model() <=
+			** "Security requirements are satisfied in the system model" **
+			Req_Attestation() and Req_Filter() and Req_Monitor() and Req_Separation()
+		
+	**};
+end MC;

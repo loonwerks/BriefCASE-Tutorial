@@ -1,0 +1,50 @@
+{
+    "date": "2022-10-01-191921",
+    "filename": "/home/vagrant/workspace/Hardened/Requirements/GearCASE/requirements/Requirements-2022-10-01-191826.json",
+    "requirements": [
+        {
+            "type": "attestation",
+            "id": "Req_Attestation",
+            "text": "Communication sources shall be trusted",
+            "context": "MC::MissionComputer.Impl.SW.RadioDriver",
+            "formalize": false,
+            "rationale": "",
+            "date": "2022-09-09-180532",
+            "tool": "GearCASE",
+            "status": "Import"
+        },
+        {
+            "type": "separation_kernel",
+            "id": "Req_Separation",
+            "text": "Software shall run on a formally verified separation kernel",
+            "context": "MC::MissionComputer.Impl.SW",
+            "formalize": false,
+            "rationale": "",
+            "date": "2022-09-09-180532",
+            "tool": "GearCASE",
+            "status": "Import"
+        },
+        {
+            "type": "monitor_correctness",
+            "id": "Req_Monitor",
+            "text": "Output of uncontrolled component shall be monitored for incorrect behavior",
+            "context": "MC::MissionComputer.Impl.SW.FlightPlanner",
+            "formalize": false,
+            "rationale": "",
+            "date": "2022-09-09-180532",
+            "tool": "GearCASE",
+            "status": "Import"
+        },
+        {
+            "type": "permit_well_formed_data",
+            "id": "Req_Filter",
+            "text": "Messages shall be well-formed",
+            "context": "MC::MissionComputer.Impl.SW.FlightPlanner",
+            "formalize": true,
+            "rationale": "",
+            "date": "2022-09-09-180532",
+            "tool": "GearCASE",
+            "status": "Import"
+        }
+    ]
+}

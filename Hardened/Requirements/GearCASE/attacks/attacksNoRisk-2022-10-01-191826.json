@@ -1,0 +1,11 @@
+{
+	"Tool" : "GearCASE",
+	"Implementation" : "MissionComputer_Impl_Instance",
+	"Description" : "attacksNoRisk-2022-10-01-191826.json",
+	"Date" : "2022-10-01-191826",
+	"Hashcode" : "",
+	"Total Number of Attack Plans": 0,
+	"Total Number of Attack/Component Pairs": 0,
+	"Attacks": {
+	}
+}

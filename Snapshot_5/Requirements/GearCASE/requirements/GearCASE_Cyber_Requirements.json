@@ -1,0 +1,36 @@
+{
+	"Tool" : "GearCASE",
+	"Implementation" : "MissionComputer_Impl_Instance",
+	"Date" : "2022-09-09-180532",
+	"Hashcode" : "-1110165987",
+	"Requirements" : {
+		"Requirement 1" : {
+			"NIST 800-53 Security Controls" : [
+				"attestation"
+			],
+			"Description" : "Communication sources shall be trusted",
+			"Component" : "SW.RadioDriver"
+		},
+		"Requirement 2" : {
+			"NIST 800-53 Security Controls" : [
+				"permit_well_formed_data"
+			],
+			"Description" : "Messages shall be well-formed",
+			"Component" : "SW.FlightPlanner"
+		},
+		"Requirement 3" : {
+			"NIST 800-53 Security Controls" : [
+				"monitor_correctness"
+			],
+			"Description" : "Output of uncontrolled component shall be monitored for incorrect behavior",
+			"Component" : "SW.FlightPlanner"
+		},
+		"Requirement 4" : {
+			"NIST 800-53 Security Controls" : [
+				"separation_kernel"
+			],
+			"Description" : "Software shall run on a formally verified separation kernel",
+			"Component" : "SW"
+		}
+	}
+}

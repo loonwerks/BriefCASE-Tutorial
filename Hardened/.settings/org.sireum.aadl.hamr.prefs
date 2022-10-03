@@ -1,0 +1,12 @@
+base.package.name=
+bit.width=64
+c.aux.src.directory=
+c.output.directory=
+camkes.aux.src.dir=
+camkes.output.directory=/home/vagrant/workspace/Hardened/HAMR/CAmkES
+eclipse.preferences.version=1
+exclude.slang.impl=true
+max.sequence.size=16
+max.string.size=256
+platform=seL4
+slang.output.directory=/home/vagrant/workspace/Hardened/HAMR

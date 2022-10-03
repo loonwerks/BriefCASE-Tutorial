@@ -1,0 +1,157 @@
+requirements_stated_in_terms_of_interface
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+tool_generated_apis_correctly_derived_from_model
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+application_code_uses_tool_generated_apis
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+library_usage_has_no_effect_outside_of_component_boundary
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+application_code_runs_to_completion
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+component_output_satisfies_contract_on_every_dispatch
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+component_output_satisfies_information_flow_specifications_on_every_dispatch
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+component_execution_time_conforms_to_specified_wcet_on_every_dispatch
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+component_infrastructure_code_satisfies_aadl_semantics
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+identifiable_component_platform_deployment
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+application_infrastructure_deployment_interface_identification
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+port_correspondence_traceability
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+component_dispatch
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+infrastructure_application_non_interference
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+specified_information_flow_directionality_enforced_by_deployment
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+deployed_component_satisfies_functional_requirements
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+deployed_component_satisfies_intra_component_flows
+	MissionComputer.Impl.SW.RadioDriver.RadioDriver : FAILED
+	MissionComputer.Impl.SW.FlightPlanner.FlightPlanner : FAILED
+	MissionComputer.Impl.SW.FlightController.FlightController : FAILED
+	MissionComputer.Impl.SW.Filter.Filter : FAILED
+	MissionComputer.Impl.SW.Monitor.Monitor : FAILED
+	MissionComputer.Impl.SW.AttestationManager.AttestationManager : FAILED
+	MissionComputer.Impl.SW.AttestationGate.AttestationGate : FAILED
+	MissionComputer.Impl.SW.AttestationTester.AttestationTester : FAILED
+platform_components_guarantee_required_properties
+	MissionComputer.Impl : FAILED
+system_implementation_satisfies_security_requirements
+	MissionComputer.Impl : FAILED

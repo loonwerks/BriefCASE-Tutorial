@@ -1,0 +1,38 @@
+package CASE_Requirements
+private
+	annex resolute {**
+		
+		goal Req_Attestation() <=
+			** "[attestation] Communication sources shall be trusted" **
+			context Generated_By : "GearCASE";
+			context Generated_On : "2022-09-09-180532";
+			context Req_Component : "MC::MissionComputer.Impl.SW.RadioDriver";
+			context Formalized : "False";
+			add_attestation_manager("MC::MissionComputer.Impl.SW.RadioDriver", "MC::MissionComputer.Impl.SW.AttestationManager", "MC::MissionComputer.Impl.SW.AttestationGate")
+		
+		goal Req_Filter() <=
+			** "[permit_well_formed_data] Messages shall be well-formed" **
+			context Generated_By : "GearCASE";
+			context Generated_On : "2022-09-09-180532";
+			context Req_Component : "MC::MissionComputer.Impl.SW.FlightPlanner";
+			context Formalized : "True";
+			agree_property_checked("MC::MissionComputer.Impl.SW.FlightPlanner", "Req_Filter") and add_filter("MC::MissionComputer.Impl.SW.FlightPlanner", "MC::MissionComputer.Impl.SW.Filter", "MC::MissionComputer.Impl.SW.c7", Data_Types::RF_Msg.Impl)
+		
+		goal Req_Monitor() <=
+			** "[monitor_correctness] Output of uncontrolled component shall be monitored for incorrect behavior" **
+			context Generated_By : "GearCASE";
+			context Generated_On : "2022-09-09-180532";
+			context Req_Component : "MC::MissionComputer.Impl.SW.FlightPlanner";
+			context Formalized : "False";
+			add_monitor_gate("MC::MissionComputer.Impl.SW.FlightPlanner", "MC::MissionComputer.Impl.SW.Monitor", "MC::MissionComputer.Impl.SW.Monitor.Alert", "MC::MissionComputer.Impl.SW.FlightController", Data_Types::Mission)
+		
+		goal Req_Separation() <=
+			** "[separation_kernel] Software shall run on a formally verified separation kernel" **
+			context Generated_By : "GearCASE";
+			context Generated_On : "2022-09-09-180532";
+			context Req_Component : "MC::MissionComputer.Impl.SW";
+			context Formalized : "False";
+			sel4_transform("MC::MissionComputer.Impl.SW")
+		
+	**};
+end CASE_Requirements;
