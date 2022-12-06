@@ -16,3 +16,6 @@ The virtual machine containing all necessary tools and models should be installe
 - Import the case-tutorial.ova in VirtualBox and start the VM
   - The Debian guest OS login username and password are both:  vagrant
   - Once the Debian guest OS has booted, open a terminal and launch BriefCASE by entering:  briefcase&
+- Open the "Initial" project (in the AADL Navigator pane on the left-hand side of the IDE)
+  - The project contains the BriefCASE tutorial walk-through
+  - Get started!
